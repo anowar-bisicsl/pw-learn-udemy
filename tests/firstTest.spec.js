@@ -12,5 +12,5 @@ test('first test', async ({page}) => {
 
     await page.getByText('Form Layouts').click();
 
-    await page.close();
+    // await page.close();
 })

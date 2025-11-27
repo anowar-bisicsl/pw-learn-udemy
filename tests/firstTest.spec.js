@@ -1,4 +1,4 @@
-import {expect, test} from "@playwright/test";
+import {test} from "@playwright/test";
 
 test('first test', async ({page}) => {
     await page.goto('https://demo.akveo.com/ngx-admin/pages/dashboard');
@@ -12,5 +12,5 @@ test('first test', async ({page}) => {
 
     await page.getByText('Form Layouts').click();
 
-    // await page.close();
+    await page.close();
 })
